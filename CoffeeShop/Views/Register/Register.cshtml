@@ -1,0 +1,12 @@
+﻿@model CoffeeShop.Models.UserReg
+
+@{
+    ViewData["Title"] = "Register";
+}
+    <div class="alert alert-success" role="alert">
+        <h1>Thank you for registering  @ViewData["name"], your new username is @ViewData["username"]</h1>
+        <p>You may be contacted at @ViewData["phone"]</p>
+        <p>
+            Your preferred drink is @*@Model.Drink*@</p>
+            <p>A confirmation email has been sent to @ViewData["email"]</p>
+        </div>
